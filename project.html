@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weglot | Your solution for website translation and multilingual SEO</title>
+    <link rel="icon"
+        href="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67cee95e6de156e5ca852745_649180bb70e6f03c6d4dcc3d_favicon-32x32.png"
+        type="image/ico">
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JE9LFY0FZZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JE9LFY0FZZ');
+</script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Ppneuemontreal, Arial, sans-serif;
+        }
+
+        ::selection {
+            background-color: #18164c;
+            color: #473ae0;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: white;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav_contianer {
+            display: flex;
+            /* border: 1px solid black; */
+            width: 80%;
+            padding: 15px;
+            margin: auto;
+            /* justify-content: space-between;
+            align-items: center; */
+        }
+
+        .nav_right {
+            display: flex;
+            /* border: 1px solid black; */
+            width: 100%;
+            font-size: 14px;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .nav_right .left a:hover {
+            transition: all 0.3s ease-in-out;
+            color: #473ae0;
+        }
+
+        .nav_right .right a:hover {
+            transition: all 0.3s ease-in-out;
+            color: #473ae0;
+        }
+
+        .nav_right .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .nav_left {
+            display: flex;
+            /* border: 1px solid black; */
+            gap: 20px;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        .nav_left button {
+            color: #18164c;
+            font-weight: bold;
+            padding: 8px 15px;
+            background-color: white;
+            border-radius: 7px;
+            z-index: 20;
+        }
+
+        .nav_contianer .left {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        .nav_contianer .left li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav_contianer .right {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav_contianer .right li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn {
+            color: white;
+            font-weight: bold;
+            padding: 13px 18px;
+            background-color: #473ae0;
+            border: none;
+            border-radius: 7px;
+            z-index: 21;
+        }
+
+        .btn:hover {
+            transition: all 0.3s ease-in-out;
+            background-color: #18164c;
+            cursor: pointer;
+        }
+
+        hr {
+            border: 1px solid #f9f7f7;
+        }
+
+        .header_first {
+            display: flex;
+            /* border: 1px solid black; */
+            width: 80%;
+            min-height: 40vh;
+            margin: 100px auto;
+        }
+
+        .header_sec {
+            /* border: 1px solid black; */
+            /* margin: 0px 50px; */
+            width: 50%;
+        }
+
+        .header_sec .the h1 {
+            font-size: 4rem;
+            color: #18164c;
+            line-height: 60px;
+            font-weight: 700;
+            letter-spacing: -2px;
+            width: 90%;
+        }
+
+        .header_sec .the p {
+            font-size: 1.2rem;
+            width: 90%;
+            line-height: 30px;
+            /* margin: 20px 0px; */
+        }
+
+        .header_sec .the p:nth-child(2) {
+            margin: 20px 0px;
+            color: rgb(65, 62, 62);
+        }
+
+        .header_sec .the p:nth-child(4) {
+            font-size: 0.8rem;
+            margin: 18px 50px;
+            color: rgb(142, 141, 141);
+            font-weight: 600;
+        }
+
+        .header_sec .the button {
+            color: white;
+            font-weight: bold;
+            padding: 20px 32px;
+            background-color: #473ae0;
+            border: none;
+            border-radius: 7px;
+            font-size: 1rem;
+        }
+
+        .header_sec .the button:hover {
+            transition: all 0.3s ease-in-out;
+            background-color: #18164c;
+            cursor: pointer;
+        }
+
+        .header_first .rating {
+            display: flex;
+            /* justify-content: space-around; */
+            gap: 33px;
+            /* border: 1px solid black; */
+            line-height: 25px;
+            margin-top: 60px;
+        }
+
+        .rating .star {
+            color: rgb(241, 90, 14);
+            font-size: 1.2rem;
+        }
+
+        .rating .num {
+            font-size: 2rem;
+            color: rgb(65, 62, 62);
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        .rating .divide {
+            width: 3px;
+            height: 42px;
+            background-color: #cdced0;
+            position: relative;
+            top: 40px;
+        }
+
+        .head_last {
+            text-align: center;
+            border: 1px solid black;
+            background-color: #18164c;
+            height: 200px;
+        }
+
+        .head_last p {
+            font-size: 1.3rem;
+            margin: 40px 0px;
+            color: white;
+            font-weight: bolder;
+            letter-spacing: -1px;
+        }
+
+        .head_last .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .head_last .logo li {
+            list-style: none;
+        }
+
+        main h1 {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-top: 120px;
+            margin-bottom: 70px;
+            color: #18164c;
+            letter-spacing: -2px;
+            font-weight: 800;
+        }
+
+        .span_color {
+            background-image: linear-gradient(114deg, white, #c2e3fb);
+        }
+
+        .span_color:hover {
+            transition: all 0.3s ease-in-out;
+            background-image: linear-gradient(100deg, white, #c2e3fb);
+            cursor: pointer;
+        }
+
+        main .first {
+            display: flex;
+            width: 80%;
+            margin: auto;
+            height: 500px;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid; */
+            margin-top: 15px;
+            background-color: #f6f7fb;
+            gap: 40px;
+        }
+
+        main .first p {
+            /* border: 1px solid; */
+            width: 560px;
+        }
+
+        main .first p:nth-child(1) {
+            color: #18164c;
+            font-weight: 800;
+            font-size: 1.8rem;
+            line-height: 35px;
+            margin-bottom: 15px;
+
+        }
+
+        main .first p:nth-child(2) {
+            line-height: 25px;
+            /* border: 1px solid; */
+            color: rgb(65, 62, 62);
+
+        }
+
+        main .first p:nth-child(3) {
+            color: #18164c;
+            font-weight: 750;
+            margin-top: 20px;
+        }
+
+        .arrow {
+            position: relative;
+            top: 3px;
+        }
+
+        main .second {
+            padding: 50px;
+            background-color: #c2e3fb;
+
+        }
+
+        main .second p {
+            /* border: 1px solid; */
+            width: 560px;
+        }
+
+        main .second p:nth-child(1) {
+            /* border: 1px solid; */
+
+        }
+
+        main .second p:nth-child(2) {
+            color: rgb(65, 62, 62);
+
+        }
+
+        main .third {
+            background-color: #f5cdff;
+        }
+
+        main .third p {
+            /* border: 1px solid; */
+            width: 400px;
+        }
+
+        main .third p:nth-child(2) {
+            width: 500px;
+        }
+
+        main .fourth {
+            background-color: #f6f7fb;
+            margin-bottom: 120px;
+        }
+
+        main .fourth p {
+            /* border: 1px solid; */
+            width: 480px;
+        }
+
+        main .fourth p:nth-child(1) {
+            width: 380px;
+        }
+
+        .span_co {
+            background-image: linear-gradient(333deg, white, #c2e3fb);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            justify-content: center;
+            gap: 25px;
+            justify-self: center;
+            /* border: 1px solid; */
+            margin-bottom: 100px;
+        }
+
+        .grid .box {
+            border: px solid black;
+            padding: 10px;
+            width: 150px;
+            height: 150px;
+            justify-items: center;
+            background-color: #f6f7fb;
+            position: relative;
+            border-radius: 7px;
+        }
+
+        .grid .box img {
+            position: absolute;
+            top: 40%;
+            left: 18px;
+            right: auto;
+            bottom: auto;
+        }
+
+        .grid .box:hover {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 7px 7px #473ae0;
+            cursor: pointer;
+        }
+
+        .grid .box .book {
+            position: absolute;
+            top: 40%;
+            left: 50px;
+            right: auto;
+            bottom: auto;
+        }
+
+        .grid .box .shop {
+            position: absolute;
+            top: 40%;
+            left: 30px;
+            right: auto;
+            bottom: auto;
+        }
+
+        .grid .box .square {
+            position: absolute;
+            top: 40%;
+            left: 30px;
+            right: auto;
+            bottom: auto;
+        }
+
+        .grid .box_all {
+            background-color: white;
+            border: 2px solid #18164c;
+            ;
+        }
+
+        .grid .box .all {
+            position: absolute;
+            top: 40%;
+            left: 10px;
+            right: auto;
+            bottom: auto;
+            font-weight: bold;
+            text-align: center;
+            background-color: white;
+            color: #18164c;
+        }
+
+        .hr {
+            margin-bottom: 120px;
+            border-bottom: 1px solid #cdced0
+        }
+
+        .connect {
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .connect h1 {
+            font-size: 48px;
+            color: #18164c;
+            /* border: 1px solid; */
+            width: 40vw;
+            justify-self: center;
+            margin-bottom: 20px;
+            font-weight: 700px;
+            line-height: 1em;
+        }
+
+        .connect p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.6em;
+            /* border: 1px solid; */
+            width: 36vw;
+            justify-self: center;
+            color: rgb(65, 62, 62);
+        }
+
+        .connect P:nth-child(3) {
+            color: #18164c;
+            font-weight: 750;
+            margin-top: 20px;
+        }
+
+        .side_bar {
+            background-color: #f6f7fb;
+            display: flex;
+            height: 700px;
+            /* width: 100vw; */
+        }
+
+        .sidebar_left {
+            /* border: 1px solid; */
+            width: 30vw;
+            height: 450px;
+            margin-top: 130px;
+            margin-left: 160px;
+            margin-right: 130px;
+        }
+
+        .sidebar_left h2 {
+            font-size: 45px;
+            color: #18164c;
+            font-weight: 800;
+            line-height: 1em;
+        }
+
+        .sidebar_left p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.6em;
+            width: 23vw;
+            /* border: 1px solid; */
+            margin: 20px 0px;
+            color: #434649;
+        }
+
+        .sidebar_left .best {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+
+        .sidebar_left .a img:nth-child(2) {
+            transform: rotate(180deg);
+            margin-left: 7px;
+        }
+
+        .sidebar_right {
+            width: 21vw;
+            height: 390px;
+            border: 1px solid;
+            padding: 30px;
+            background-color: #f5cdff;
+            margin: 125px 0;
+            border: none;
+            line-height: 25px;
+        }
+
+        .sidebar_right:hover {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 8px 8px #473ae0;
+            cursor: pointer;
+        }
+
+        .sidebar_right2 {
+            background-color: white;
+            height: 370px;
+            margin-left: 20px;
+            border: 2px solid black;
+        }
+
+        .sidebar_right .sideright1 p {
+            color: #434649;
+            margin-top: 30px;
+            margin-bottom: 55px;
+        }
+
+        .sidebar_right .sideright2 {
+            display: flex;
+            gap: 10px;
+        }
+
+        .sidebar_right .author_pic img {
+            border-radius: 20px;
+            position: relative;
+            top: 18px;
+        }
+
+        .sidebar_right .author_details h5 {
+            color: #18164c;
+            font-weight: bolder;
+            position: relative;
+            top: 8px;
+
+
+        }
+
+        .sidebar_right .author_details p {
+            line-height: 22px;
+            font-size: 14px;
+            color: #18164c;
+        }
+
+        aside .learn h1 {
+            font-size: 48px;
+            color: #18164c;
+            text-align: center;
+            width: 50vw;
+            justify-self: center;
+            margin-top: 100px;
+            letter-spacing: -2px;
+            font-weight: 790;
+        }
+
+        aside .learn p {
+            font-size: 18px;
+            color: #434649;
+            text-align: center;
+            width: 52vw;
+            justify-self: center;
+            margin-top: 20px;
+            line-height: 30px;
+            letter-spacing: 0.5px;
+        }
+
+        aside .tool {
+            /* border: 1px solid; */
+            width: 19vw;
+            height: 544px;
+            padding: 30px 30px;
+            background-color: #f5cdff;
+        }
+
+        aside .tool p:nth-child(2) {
+            font-weight: 700;
+            color: #18164c;
+            font-size: 23px;
+            margin-top: 35px;
+            word-spacing: -6px;
+        }
+
+        aside .tool p:nth-child(3) {
+            /* border: 1px solid; */
+            width: 13vw;
+            line-height: 25px;
+            color: #434649;
+            margin-top: 20px;
+        }
+
+        aside .tool .toolflex {
+            display: flex;
+            gap: 60px;
+        }
+
+        aside .tool .toolflex span {
+            /* border: 1px solid; */
+            height: 32px;
+            padding: 7px;
+            background-color: white;
+            font-weight: bold;
+            color: #18164c;
+            margin-left: 30px;
+            font-weight: 700;
+        }
+
+        aside .tool:hover {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 7px 7px #473ae0;
+            cursor: pointer;
+        }
+
+        aside .case_study {
+            display: flex;
+            border: 2px solid;
+            width: 40vw;
+            height: 544px;
+            gap: 30px;
+            /* padding: 30px 30px; */
+
+        }
+
+        aside .case_study .caseflex_1 {
+            margin-top: 40px;
+        }
+
+        aside .case_study .caseflex_1 span {
+            border: 1px solid;
+            height: 32px;
+            padding: 7px;
+            background-color: #18164c;
+            font-weight: bold;
+            color: white;
+            margin-bottom: 50px;
+            font-weight: 700;
+        }
+
+        aside .case_study .caseflex_1 img {
+            display: block;
+            margin-top: 22px;
+            margin-bottom: 32px;
+        }
+
+        aside .case_study .caseflex_1 p {
+            /* border: 1px solid; */
+            width: 16vw;
+            line-height: 25px;
+            color: #434649;
+        }
+
+        aside .case_study:hover {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 7px 7px #473ae0;
+            cursor: pointer;
+        }
+
+        aside .tool_1 {
+            background-color: #cc1a85;
+        }
+
+        aside .tool_1 p:nth-child(2) {
+            color: white;
+            /* border: 1px solid; */
+            width: 222px;
+            word-spacing: 0.1px;
+        }
+
+        aside .tool_1 p:nth-child(3) {
+            color: white;
+            /* border: 1px solid; */
+            width: 207px;
+        }
+
+        aside .three_flex {
+            display: flex;
+            /* border: 1px solid; */
+            width: 100%;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 70px;
+        }
+
+        .four_flex {
+            display: flex;
+            gap: 25px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .four_flex .mobile {
+            /* border: 1px solid; */
+            margin-top: 20px;
+            margin-bottom: 120px;
+            width: 611px;
+            height: 340px;
+            background-color: #c2e3fb;
+            padding: 30px;
+        }
+
+        .four_flex .mobile h3 {
+            /* border: 1px solid; */
+            margin-top: 35px;
+            font-weight: 700;
+            color: #18164c;
+            font-size: 25px;
+        }
+
+        .four_flex .mobile p {
+            /* border: 1px solid; */
+            width: 33vw;
+            margin-top: 20px;
+            line-height: 25px;
+            color: #434649;
+        }
+
+        .four_flex .mobile .ebook {
+            display: flex;
+            gap: 390px;
+        }
+
+        .four_flex .mobile .ebook span {
+            /* border: 1px solid; */
+            height: 32px;
+            padding: 7px;
+            background-color: white;
+            font-weight: 700;
+            color: #18164c;
+            margin-bottom: 50px;
+        }
+
+        .blog span {
+            /* border: 1px solid; */
+            margin-left: 30px;
+
+        }
+
+        .pencil p:nth-child(3) {
+            /* border: 1px solid; */
+            width: 490px;
+        }
+
+        aside .four_flex .pencil {
+            background-color: #f6f7fb;
+        }
+
+        aside .four_flex .mobile:hover {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 7px 7px #473ae0;
+            cursor: pointer;
+        }
+
+        footer .first_footer {
+            display: flex;
+            /* width: 100%; */
+            height: 600px;
+            background-color: #473ae0;
+            margin-bottom: 50px;
+        }
+
+        footer .first_footer .weglot {
+            margin: 0px 150px;
+            margin-top: 115px;
+        }
+
+        footer .first_footer .weglot h1 {
+            font-weight: 700;
+            font-size: 3rem;
+            color: white;
+            letter-spacing: -1px;
+            margin-top: 30px;
+        }
+
+        footer .first_footer .weglot p {
+            /* border: 1px solid; */
+            width: 40vw;
+            color: white;
+            line-height: 30px;
+            margin: 18px 0;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+        }
+
+        .first_footer .weglot button {
+            border: 2px solid black;
+            border-radius: 7px;
+            color: white;
+            color: #18164c;
+            width: 24vw;
+            height: 60px;
+            font-size: 18px;
+        }
+
+        .first_footer .weglot button:hover {
+            transition: all 0.3s ease-in-out;
+            background-color: #18164c;
+            color: white;
+            cursor: pointer;
+        }
+
+        .first_footer .weglot button span {
+            font-weight: bold;
+        }
+
+        .first_footer .no_code ul {
+            list-style: none;
+            margin-top: 230px;
+            position: relative;
+            right: 50px;
+        }
+
+        .first_footer .no_code ul li {
+            padding: 12px;
+            color: white;
+            font-size: 25px;
+            letter-spacing: 1px;
+        }
+
+        .first_footer .no_code ul li img {
+            float: left;
+            margin-right: 10px;
+        }
+
+        footer .width {
+            /* width: 80vw; */
+            /* border: 1px solid; */
+            margin-bottom: 20px;
+            justify-self: center;
+        }
+
+        footer .footer_last {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            width: 80vw;
+            /* gap: 80px; */
+        }
+
+        footer .footer_last .for {
+            width: 28vw;
+            /* border: 1px solid; */
+        }
+
+        footer .footer_last .for #a {
+            line-height: 25px;
+            display: block;
+            color: #434649;
+            letter-spacing: 0.5px;
+            font-size: 14px;
+            /* border: 1px solid; */
+            width: 25vw;
+        }
+
+        footer .footer_last .resources #b {
+            width: 10vw;
+            /* border: 1px solid; */
+            line-height: 25px;
+        }
+
+        footer .footer_last p {
+            margin: 10px 0px;
+            font-size: 14px;
+            color: #434649;
+            letter-spacing: 0.5px;
+            /* border: 1px solid; */
+            width: 13vw;
+        }
+
+        footer .footer_last .dark {
+            color: #18164c;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        footer .footer_last .dark_1 {
+            width: 19vw;
+        }
+
+        .btn_1 {
+            margin: 10px 0;
+        }
+
+        footer #footer_line {
+            border: 1px solid #f9f7f7;
+            width: 80vw;
+            justify-self: center;
+        }
+
+        footer .footer_last_2 {
+            display: flex;
+            justify-content: space-between;
+            width: 80vw;
+            /* border: 1px solid; */
+            justify-self: center;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        footer .footer_last_2 .copyright {
+            font-size: 13px;
+            color: #434649;
+
+        }
+
+        footer .footer_last_2 .logo img {
+            margin: 0 5px;
+
+        }
+
+        footer .footer_last_2 .logo img:hover {
+            transition: all 0.3s ease-in-out;
+            box-shadow: 1px 1px 2px 2px black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav_contianer">
+            <div class="nav_left">
+                <a href="https://www.weglot.com/" target=blank><img
+                        src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/678640efd4d181f55a374fd9_weglot%20logo.svg"
+                        alt="logo"></a>
+                <button>English</button>
+            </div>
+            <div class="nav_right">
+                <ul class="left">
+                    <li class="ab"><a href="#home">Product</a> </li>
+                    <li><a href="#about">Intergrations</a></li>
+                    <li><a href="#services">Pricing</a></li>
+                    <li><a href="#contact">Solutions</a></li>
+                    <li><a href="#contact">Resources</a>
+                    </li>
+                </ul>
+                <ul class="right">
+                    <li><a href="#contact">Contact sales</a></li>
+                    <li><a href="#contact"><b>Login</b></a></li>
+                    <li><button class="btn">Try For Free</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr>
+    <header>
+        </div>
+        <div class="header_first">
+            <div class="header_sec">
+                <div class="the">
+                    <h1>The easiest way to translate a website</h1>
+                    <p>Everything you need to translate, display and manage your multilingual website, with full editing
+                        control.</p>
+                    <button>Get Started For Free</button>
+                    <p><i>No commitment</i></p>
+                </div>
+                <div class="rating">
+                    <div class="first_rating">
+                        <div class="num">4.8</div>
+                        <div class="star">★★★★★</div>
+                        <div>G2&nbspReviews</div>
+                    </div>
+                    <div class="divide"></div>
+                    <div class="first_rating">
+                        <div class="num">4.9</div>
+                        <div class="star">★★★★★</div>
+                        <div>WordPress Plugin Directory</div>
+                    </div>
+                    <div class="divide"></div>
+                    <div class="first_rating">
+                        <div class="num">4.9</div>
+                        <div class="star">★★★★★</div>
+                        <div>Trustpilot</div>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <video
+                    src="https://media.istockphoto.com/id/1371228411/video/time-lapse-of-kabukicho-night-time-with-crowd-people-walking-on-the-street-in-shinjuku-tokyo.mp4?s=mp4-640x640-is&k=20&c=j9R_eWXlD4hdNYMMWmRzGdJSHk2g38u0oV6lDPXFEYY="
+                    width="100%" autoplay loop muted></video>
+            </div>
+        </div>
+        <div class="head_last">
+            <p>Join 110,000+ global brands from every industry</p>
+            <ul class="logo">
+                <li><img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67e958387e00d84a735285e0_HBO-white.svg"
+                        width="125px" alt="logo"></li>
+                <li><img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67e9583ec22904b2b24d6d68_Nielsen-white.svg"
+                        width="125px" alt="logo"></li>
+                <li><img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67e95839a8ca619091287ba2_IBM-white.svg"
+                        width="125px" alt="logo"></li>
+                <li><img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67e958368336152373a9ccb2_Decathlon-white.svg"
+                        width="125px" alt="logo"></li>
+                <li><img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67e95b15528c3b1646977f34_Roche-white.svg"
+                        width="125px" alt="logo"></li>
+                <li><img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67d878810b7caa042fa26798_Amazon-white.avif"
+                        width="120px" alt="logo"></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h1>Say goodbye to <span class="span_color">language barriers</span></h1>
+
+        <section class="first">
+            <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67ab283885743a012161b76a_product1%20weglot.avif"
+                width="40%">
+            <div>
+                <p>Remove the complexity of website translation</p>
+                <p>Connect Weglot with any website technology for a fully translated and displayed website in minutes.
+                    Without development efforts, our simple integration can be handled by anyone in your team.
+                </p>
+                <p><span class="span_color span_co"> See our integrations
+                        <img class="arrow"
+                            src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/6780e96057ee7224927a8569_Vector.webp"
+                            width="20px"></span>
+                </p>
+            </div>
+        </section>
+
+        <section class="first second">
+            <div>
+                <p>Translation quality without months of manual work</p>
+                <p>
+                    Cut costs, save time and maximize translation quality by combining AI translation, human editing,
+                    and professional translators. Your translation project, your way, with complete editing
+                    control—centralized through one easy-to-use dashboard.</p>
+                <p><span class="span_color span_co">Learn more about translation quality <img class="arrow"
+                            src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/6780e96057ee7224927a8569_Vector.webp"
+                            width="20px"></p></span>
+            </div>
+            <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67ab28c64998767ef7f5f653_product2%20weglot-p-1600.avif"
+                alt="Mobile image" width="43%">
+        </section>
+
+        <section class="first third">
+            <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67ab29749b21518a7c9beaa6_product3%20weglot-p-1600.avif"
+                width="41%" alt="image">
+            <div>
+                <p>Reach new audiences
+                    with multilingual SEO</p>
+                <p>Say hi to your new visitors! Automatically created language subdomains or subdirectories, hreflang
+                    tag implementation, and translated metadata rank your translated pages on search engines.
+                </p>
+                <p><span class="span_color span_co">Read more about multilingual SEO
+                        <img class="arrow"
+                            src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/6780e96057ee7224927a8569_Vector.webp"
+                            width="20px"></span>
+                </p>
+            </div>
+        </section>
+
+        <section class="first fourth">
+            <div>
+                <p>A multilingual website
+                    in minutes</p>
+                <p>
+                    Don't waste time with lengthy, technical processes that take days. Understand how anyone can take
+                    their website from one language to multiple in three simple steps with Weglot.</p>
+                <p><span class="span_color span_co">Discover how Weglot works
+                        <img class="arrow"
+                            src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/6780e96057ee7224927a8569_Vector.webp"
+                            width="20px"></span>
+                </p>
+            </div>
+            <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67ab2b0592157fb1f2e935a3_product4%20weglot.avif"
+                alt="Mobile image" width="45%">
+    </main>
+    <hr class="hr">
+    <article>
+        <div class="grid">
+            <div class="box">
+                <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/6784ebbb2397fe96c21aa50e_66190ec3bd104cec7fb5633e_WordPress.webp"
+                    width="120px">
+            </div>
+            <div class="box">
+                <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/6784ebb658cc2cefc50b8a8a_675726050a0090467d9c3efb_Webflow%2520new.avif"
+                    width="120px">
+            </div>
+            <div class="box">
+                <img class="shop"
+                    src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/6784ebb1eaef01228e25081b_66190fec471caacdc6cd4670_Shopify.avif"
+                    width="120px">
+            </div>
+            <div class="box">
+                <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/6784ebb5b0c18b92b5f83b0a_66191165bd104cec7fb7afcc_SquareSpace.webp"
+                    width="120px">
+            </div>
+            <div class="box">
+                <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/6784ebbabe8fb2cf25343dac_6619110be0769de30190d8f1_Wix.webp"
+                    width="120px">
+            </div>
+            <div class="box">
+                <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/6784ebb6fab4844b40a5a02a_6619120e91190b3f296f83b5_Custom%2520Code.avif"
+                    width="120px">
+            </div>
+            <div class="box">
+                <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/6784ebb2eaef01228e2508c5_661910d1f1663424c7218d31_Bubble.webp"
+                    width="120px">
+            </div>
+            <div class="box">
+                <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/6784ebb642f1f25859952f3f_6619126c949f7cd002ee47de_JS.webp"
+                    width="120px">
+            </div>
+            <div class="box">
+                <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/6784ebb193dc126f166efc25_661911f7335585aaa62b5d76_BigCommerce.webp"
+                    width="120px">
+            </div>
+            <div class="box">
+                <img class="square"
+                    src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/6784ebb53104ad2a985c1048_6619115fbba67f40a5e9dc73_SquareOnline.webp"
+                    width="120px">
+            </div>
+            <div class="box">
+                <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/6784ebba6cbd5c27a7c65077_66191101b6c7e82f239725c7_WooCommerce.avif"
+                    width="120px">
+            </div>
+            <div class="box">
+                <img class="book"
+                    src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/6784ebb21f10f153a6ff88b7_66d6bec079a6fc71d525d159_Carrd%2520logo%2520Weglot.avif"
+                    width="50px">
+            </div>
+            <div class="box">
+                <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/6784ebb797e189425df5a8de_661913c51e8a837ea028e5f7_HelpScout.avif"
+                    width="120px">
+            </div>
+            <div class="box  box_all">
+                <span class="all">+See all integrations</span>
+            </div>
+        </div>
+        <div class="connect">
+            <h1>Connect Weglot easily with your favorite tools</h1>
+            <p>Don’t change the way your website works. Weglot is compatible with all Content Management Systems, web
+                technologies and tools.</p>
+            <p>Explore all <span class="span_co">integrations <img class="arrow"
+                        src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/6780e96057ee7224927a8569_Vector.webp"
+                        width="20px"></span></p>
+        </div>
+    </article>
+    <div class="side_bar">
+        <div class="sidebar_left">
+            <h2>Hear it from our satisfied customers</h2>
+            <p>Weglot’s impact speaks for itself with customers reporting more than a 400% traffic and a 20% conversion
+                rate
+                increase!</p>
+            <div class="best">
+                <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67a61b7d88432c9cfcc77dfb_badge%201.svg"
+                    width="55px">
+                <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67a61b8c1c8cdb9c0b1032c2_badge%202.svg"
+                    width="55px">
+                <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67a61b8b0ee943531c5287f2_badge%203.svg"
+                    width="55px">
+            </div>
+            <div class="a">
+                <img
+                    src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67a4b9109e5032608109eb6f_arrow%20slider%20center.svg">
+                <img
+                    src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67a4b9109e5032608109eb6f_arrow%20slider%20center.svg">
+            </div>
+        </div>
+
+        <div class="sidebar_right">
+            <div class="sideright1">
+                <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/67814c11efeffc0a91ee27eb_66053195dfecbb144aae7088_The%2520Bradery.svg"
+                    width="100px">
+                <p>
+                    “The biggest win for us is the time we’ve saved. It takes us about ten minutes twice a week to
+                    double-check
+                    everything is running how we want it. Everything else is done by Weglot.”</p>
+            </div>
+            <div class="sideright2">
+                <div class="author_pic">
+                    <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/67814a07b536d97d5dea05f0_648c30a9c4e9b2d9a229cfd1_Adele%2520Aubry.avif"
+                        width="30px">
+                </div>
+                <div class="author_details">
+                    <h5>
+                        Adèle Aubry</h5>
+                    <p>Ecommerce Manager at The Bradery</p>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar_right sidebar_right2">
+            <div class="sideright1 sideright21">
+                <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/67814c0e1c30f0c9b466c060_660546852721fece98faf224_Reviews.io.svg"
+                    width="100px">
+                <p>
+
+                    “We needed a product that dramatically increased the speed of website translation. Our clunky manual
+                    coding approach was time-consuming, but with Weglot, it’s fast and effortless.”</p>
+            </div>
+            <div class="sideright2 sideright22">
+                <div class="author_pic">
+                    <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/67814a0cb536d97d5dea0dbf_648c2e585d647e80489c36c7_Rich%2520Ball.avif"
+                        width="30px">
+                </div>
+                <div class="author_details">
+                    <h5>
+                        Rich Ball</h5>
+                    <p>
+                        Marketing Manager, REVIEWS.io</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <aside>
+        <div class="learn">
+            <h1>Learn the best practices to thrive with your multilingual<span class="span_color"> website</span></h1>
+            <p>Improve your skills and find the key information you need to grow your business globally from our vast
+                collection of resources.</p>
+        </div>
+        <div class="three_flex">
+            <div class="tool">
+                <div class="toolflex">
+                    <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67a33e87159c9b87891159e6_icon%20card%20case%20study.svg"
+                        width="90px">
+                    <span>Tool</span>
+                </div>
+                <p>Word Count Tool</p>
+                <p>Get an estimate of how much your website translation project can cost.</p>
+            </div>
+            <div class="case_study">
+                <div class="caseflex">
+                    <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/67814c13343701eb521884b0_661902b4d436784c0bbf9caf_Respond.io%2520Thumbnail.webp"
+                        width="270px">
+                </div>
+                <div class="caseflex_1">
+                    <span>Case Study</span>
+                    <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01dc/67814c13343701eb5218849d_66ab9dc13b060d6538798388_respond.io.png"
+                        width="100px">
+                    <p>
+                        With over 10,000 companies from 86 countries relying on respond.io’s customer conversation
+                        management platform, they needed a fast, intuitive, and powerful website translation solution to
+                        reach their diverse audience. They found everything they needed (and more) in Weglot.
+                    </p>
+                </div>
+            </div>
+            <div class="tool tool_1">
+                <div class="toolflex toolflex_1">
+                    <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67ab4f0df1a4fc6a07e4975d_panneau%20icon%20weglot.svg"
+                        width="90px">
+                    <span>Guide</span>
+                </div>
+                <p>5 Key Search Engine Optimization Tips for Your Multilingual Website in 2024</p>
+                <p>Discover how to follow the best practices in terms of multilingual SEO in 2024 and 4 ways to optimize
+                    your site’s search engine rankings.</p>
+            </div>
+        </div>
+        <div class="four_flex">
+            <div class="mobile">
+                <div class="ebook">
+                    <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67ab36808f1a027a509da87b_phone%20icon%20weglot.svg"
+                        width="90px">
+                    <span>E-book</span>
+                </div>
+                <h3>Best practices for translating your website</h3>
+                <P>Learn how to complete a thoroughly translated and localized website and appeal to global audiences
+                    with our comprehensive ebook.
+
+                </P>
+            </div>
+            <div class="mobile pencil">
+                <div class="ebook blog">
+                    <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/67ab3676ac4ada077ee2aada_crayon%20icon%20weglot.svg"
+                        width="90px">
+                    <span>Blog</span>
+                </div>
+                <h3>7 Reasons Why Having a Multi-Language Site Benefits Your Business</h3>
+                <P>Having your website and its content available in a language accessible to visitors is crucial. Read
+                    our 7 reasons why you need a multilingual website.
+
+                </P>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div class="first_footer">
+            <div class="weglot">
+                <img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/678522e6983de51aba73f5b5_Illustration%20Light%20Color%20orange.svg"
+                    width="100px">
+                <h1>Weglot is free — try now!</h1>
+                <p>
+                    Get instant access to Weglot and see how it works for yourself. Keep using it for free, or upgrade
+                    when
+                    you’re ready to unlock premium benefits.
+                </p>
+                <button><span>Get started free</span>
+                    - No commitment
+                </button>
+            </div>
+            <div class="no_code">
+                <ul>
+                    <li><img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/678520ca6458c54da2666a61_laptop-shopping-cart%201.svg"
+                            width="25px">No-code
+                        solution</li>
+                    <li><img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/678520ca6458c54da2666a61_laptop-shopping-cart%201.svg"
+                            width="25px">AI translation</li>
+                    <li><img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/678520ca6458c54da2666a61_laptop-shopping-cart%201.svg"
+                            width="25px">Full editing control</li>
+                    <li><img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/678520ca6458c54da2666a61_laptop-shopping-cart%201.svg"
+                            width="25px">Multilingual SEO</li>
+                    <li><img src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/678520ca6458c54da2666a61_laptop-shopping-cart%201.svg"
+                            width="25px">Language-specific URLs
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="width">
+            <div class="footer_last">
+                <div class="product">
+                    <p class="dark">Product</p>
+                    <p>Integrations</p>
+                    <p>- &nbsp;&nbsp;WordPress</p>
+                    <p>- &nbsp;&nbsp;Squarespace</p>
+                    <p>- &nbsp;&nbsp; Shopify</p>
+                    <p>Customers</p>
+                    <p>Pricing</p>
+                    <p>Available languages</p>
+                    <p>Technical Presentation</p>
+                    <p>Weglot for Enterprise</p>
+                </div>
+
+                <div class="company">
+                    <p class="dark">Company</p>
+                    <p>Our missions</p>
+                    <p>Partners</p>
+                    <p>Jobs</p>
+                </div>
+                <div class="resources">
+                    <p class="dark">Resources</p>
+                    <p>Getting Started</p>
+                    <p>
+                        Help Center</p>
+                    <p>Developers
+                    </p>
+                    <p>Guides</p>
+                    <p>Word Count Tool</p>
+                    <p id="b">State of Machine Translation Report</p>
+                    <p>Migration</p>
+                </div>
+                <div class="more">
+                    <p class="dark">More</p>
+                    <p>Press</p>
+                    <p>Terms</p>
+                    <p>Privacy Policy</p>
+                    <p>Blog</p>
+                    <p>Product Roadmap</p>
+                    <p>Changelog</p>
+                    <p>Status</p>
+                    <p>Trust and security</p>
+                </div>
+                <div class="for">
+                    <p class="dark dark_1">Weglot for Enterprise</p>
+                    <span id="a">Discover a powerful and scalable website translation solution with advanced security,
+                        custom
+                        integrations, guaranteed uptime, and much more.</span>
+                    <button class="btn btn_1">Book a demo</button>
+                    <p class="dark dark_1">Subscribe to our newsletter</p>
+                    <span id="a">Stay up to date with the latest Weglot news and tips!</span>
+                    <button class="btn btn_1">Subscribe now</button>
+                </div>
+            </div>
+        </div>
+        <hr id="footer_line">
+        <div class="footer_last_2">
+            <div class="footer_lase_img">
+                <a href="https://www.weglot.com/" target="_blank"><img
+                        src="https://cdn.prod.website-files.com/677bd20abddfbf90ef7a01bb/678693113fae2c3fe61170eb_Logo.svg"></a>
+            </div>
+            <div class="copyright">
+                <span>Weglot © 2025, Translation as a service.&nbsp;&nbsp;</span>
+                <span>Copyright © 2024 Weglot All rights reserved.</span>
+            </div>
+            <div class="logo">
+                <a href="https://in.linkedin.com/" target="_blank"><img
+                        src="https://img.icons8.com/?size=60&id=98960&format=png" width="23px"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img
+                        src="https://img.icons8.com/?size=100&id=32292&format=png" width="23px"></a>
+                <a href="https://x.com/?lang=en" target="_blank"><img
+                        src="https://img.icons8.com/?size=100&id=fJp7hepMryiw&format=png" width="23px"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
